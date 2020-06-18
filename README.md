@@ -88,10 +88,10 @@ In the same directory write another file called `index-src.html` with the follow
 ```html
 {{ include header.html }}
 		<h1>My landing page</h1>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+		enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
 {{ include footer.html }}
 ```
 In `index-src.html` we use `include` preprocessor directives that Prep interprets to include the contents of `header.html` and `footer.html` into the output file that it creates. Now run the following command in your command-line interperter inside the `example` directory.
@@ -118,10 +118,10 @@ The `/Fe` option is used to specify the name of the output file and `index-src.h
 			</ul>
 		</div>
 		<h1>My landing page</h1>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+		enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
 		<div id="footer">
 			<address>
 				Email Address: <a href="mailto:no_reply@fake.foo">no_reply@fake.foo</a><br>

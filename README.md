@@ -4,7 +4,7 @@ A simple language agnostic preprocessor.
 
 ## Directives
 ### Include
-The `include` directive includes the contents of files into the output file. The indentation in the line of the directive is inserted before all subsequent lines that are included.
+The `include` directive includes the contents of the specified file into the output file. The specified file is also preprocessed before inclusion. The indentation in the line of the directive is inserted before all subsequent lines that are included.
 #### Example
 Suppose `tail.txt` is:
 ```

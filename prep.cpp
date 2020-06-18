@@ -263,7 +263,7 @@ unordered_map<string, function<void(string)>> options_map{
 
 int main(int argc, char * argv[]){
 	if(argc < 2) {
-		string r = "usage: prep [ option... ] fillename";
+		string r = "usage: prep [ option... ] filename";
 		cerr << r;
 		throw invalid_argument(r);
 	}

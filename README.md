@@ -71,39 +71,23 @@ Download the source file and compile it with your favourite C++ compiler. The ex
 ### Including files
 Suppose your making a website with multiple pages that contain a duplicate header and footer. You can avoid copying and pasting the header and footer into each page by using Prep. First write the header and footer into their own seperate files called `header.html` and `footer.html` respectively in a directory called `example`. This is the contents of `header.html`:
 ```html
-<!doctype html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css">
-		<link rel="icon" type="image/png" href="img/icon.png">
-		<title>My title</title>
-		<meta name="description" content="My meta description">
-	</head>
-	<body>
-		<div id="nav-bar">
-			<a href="index.html"><img id="logo" src="/img/logo.png" alt="Logo"></a>
-			<ul id="nav-links">
-				<li><a href="explore.html">Explore</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
+
 ```
 And this is the contents of `footer.html`:
 ```html
-    <div id="footer">
-      <address>
-        Email Address: <a href="mailto:no_reply@fake.foo">no_reply@fake.foo</a><br>
-        Phone Number: <a href="tel:+15555555555">1-555-555-5555</a>
-      </address>
-    </div>
+		<div id="footer">
+			<address>
+				Email Address: <a href="mailto:no_reply@fake.foo">no_reply@fake.foo</a><br>
+				Phone Number: <a href="tel:+15555555555">1-555-555-5555</a>
+			</address>
+		</div>
 	</body>
 </html>
 ```
 In the same directory write another file called `index-src.html` with the following content:
 ```html
 {{ include header.html }}
-    <h1>My landing page</h1>
+		<h1>My landing page</h1>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
     enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -133,17 +117,17 @@ The `/Fe` option is used to specify the name of the output file and `index-src.h
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
-    <h1>My landing page</h1>
+		<h1>My landing page</h1>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
     enim ad minim veniam, quis nostrud exercitation ullamco laboris
     nisi ut aliquip ex ea commodo consequat.
-    <div id="footer">
-      <address>
-        Email Address: <a href="mailto:no_reply@fake.foo">no_reply@fake.foo</a><br>
-        Phone Number: <a href="tel:+15555555555">1-555-555-5555</a>
-      </address>
-    </div>
+		<div id="footer">
+			<address>
+				Email Address: <a href="mailto:no_reply@fake.foo">no_reply@fake.foo</a><br>
+				Phone Number: <a href="tel:+15555555555">1-555-555-5555</a>
+			</address>
+		</div>
 	</body>
 </html>
 ```

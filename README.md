@@ -1,5 +1,5 @@
 # Prep
-A simple language agnostic preprocessor.
+A command-line tool to preprocess any textual files similar to C language preprocessors. Currently it can include textual files and replace defined variables with their value. One of its uses is static site generation.
 
 
 ## Directives

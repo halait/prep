@@ -71,7 +71,23 @@ Download the source file and compile it with your favourite C++ compiler. The ex
 ### Including files
 Suppose your making a website with multiple pages that contain a duplicate header and footer. You can avoid copying and pasting the header and footer into each page by using Prep. First write the header and footer into their own seperate files called `header.html` and `footer.html` respectively in a directory called `example`. This is the contents of `header.html`:
 ```html
-
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="img/icon.png">
+		<title>My title</title>
+		<meta name="description" content="My meta description">
+	</head>
+	<body>
+		<div id="nav-bar">
+			<a href="index.html"><img id="logo" src="/img/logo.png" alt="Logo"></a>
+			<ul id="nav-links">
+				<li><a href="explore.html">Explore</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
 ```
 And this is the contents of `footer.html`:
 ```html
